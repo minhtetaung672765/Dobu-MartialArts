@@ -1,0 +1,108 @@
+/* Custom styles for the DoBu Martial Arts website */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background-color: transparent;
+    /* Initially transparent */
+    transition: background-color 0.8s ease;
+    /* Smooth transition */
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent background on scroll */
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
+/* Custom styles for dropdown hover and icon rotation */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown:hover .fa-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.nav-item.dropdown .fa-chevron-down {
+    transition: transform 0.3s;
+}
+
+/*  */
+
+.dropdown-menu {
+    position: relative;
+    left: 30px;
+    margin-top: -1px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu .dropdown-item {
+    border-radius: 5px;
+    padding: 15px 0 15px 20px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgb(246, 190, 190);
+}
+
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.nav-link.btn {
+    background-color: red;
+    border: none;
+    padding: 8px 20px;
+}
+
+.nav-link.btn:hover {
+    background-color: rgb(188, 10, 10);
+}
+
+.footer .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h5 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: rgb(225, 4, 4);
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.footer .row {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .contact-info {
+    color: white;
+}
