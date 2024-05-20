@@ -24,11 +24,10 @@ body {
     /* Smooth transition */
 }
 
-.navbar.hidden {
-    /* top: -56px; */
+/* Use this css for manipulating navbar - hide when page is scrolled */
+/* .navbar.hidden {
     display: none;
-
-}
+} */
 
 .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.9);
