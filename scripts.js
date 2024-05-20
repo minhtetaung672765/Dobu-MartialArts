@@ -1,4 +1,10 @@
 
+// Make the page return to top when it's refreshed
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
+
 // This event handles the backgroundcolor adjustment of navigation bar
 // tracks the user action - scroll page - add new class to html element
 document.addEventListener('DOMContentLoaded', function () {

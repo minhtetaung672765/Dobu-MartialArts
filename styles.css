@@ -4,13 +4,37 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.header-content {
+.header-section {
     background-image: url('img/profile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100vh; */
     height: clamp(50vh, 100vh, 100vh);
 }
+
+.header-section .header-content .content-row {
+    height: 80vh;
+}
+
+h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.header-content .keyword {
+    color: red;
+}
+
+.header-content .content-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(44, 41, 41, 0.917);
+    /* height: 100%; */
+}
+
+
 
 /*  Navigation and Footer */
 
