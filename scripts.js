@@ -10,6 +10,33 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             navbar.classList.remove('scrolled');
         }
+
+        let previousScrollPoint = this.window.screenY;
+        if (previousScrollPoint < this.window.screenY) {
+            navbar.computedStyleMap('display : none');
+        }
+
     });
+});
+
+// This event handles monitoring the user's page scrolling behaviour 
+// tracks the user action - scroll page to down or not - add new class to html element
+document.addEventListener('DOMContentLoaded', function () {
+    var navbar = document.querySelector('.navbar');
+    var lastScrollTop = 0;
+
+    window.addEventListener('scroll', function () {
+        var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            // Downscroll
+            navbar.classList.add('hidden');
+        } else {
+            // Upscroll
+            navbar.classList.remove('hidden');
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    }, false);
 });
 
