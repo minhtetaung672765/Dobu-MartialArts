@@ -4,21 +4,61 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.header-content {
+    background-image: url("img/signature_edited_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: clamp(40vh, 45vw, 120vh);
+}
+
+/*  Navigation and Footer */
+
 .navbar {
     background-color: transparent;
     /* Initially transparent */
-    transition: background-color 0.8s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     /* Smooth transition */
 }
 
 .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.7);
     /* Semi-transparent background on scroll */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+
+    .navbar-brand img {
+        background-image: url('img/Logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 60px;
+    }
 }
 
+.navbar.scrolled .nav-link {
+    color: black;
+}
+
+.navbar.scrolled .nav-link:hover,
+.navbar .nav-link:hover {
+    color: red;
+}
+
+/* adjust the size of logo when responsive */
 .navbar-brand img {
     height: 60px;
 }
+
+@media only screen and (max-width : 500px) {
+    .navbar-brand img {
+        height: 40px;
+        transition: height 1s;
+    }
+}
+
+.navbar-brand img {
+    transition: height 1s;
+}
+
+/*  */
 
 /* Custom styles for dropdown hover and icon rotation */
 .nav-item.dropdown:hover .dropdown-menu {
@@ -59,6 +99,7 @@ body {
 .nav-link {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
+    color: white;
     margin-right: 15px;
 }
 
