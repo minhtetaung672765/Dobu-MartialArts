@@ -1,11 +1,14 @@
 /* Custom styles for the DoBu Martial Arts website */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@500&family=Oswald:wght@200..700&family=Patrick+Hand&family=Roboto+Condensed:wght@700&display=swap'); */
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
 .header-section {
     background-image: url('img/profile.jpg');
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/profile.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100vh; */
@@ -13,16 +16,39 @@ body {
 }
 
 .header-section .header-content .content-row {
-    height: 80vh;
+    height: 100vh;
 }
 
 h1 {
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.header-content-btn {
+    color: white;
+    border: 2px solid red;
+    padding: 8px 20px;
+    transition: background-color 0.2s;
+}
+
+.header-content-btn:hover {
+    color: white;
+    background-color: red;
+}
+
+.header-content-btn.scrolled {
+    display: none;
 }
 
 .header-content .keyword {
     color: red;
+}
+
+.header-content .content-content {
+    padding-left: 50px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .header-content .content-column {
@@ -30,10 +56,32 @@ h1 {
     justify-content: center;
     align-items: center;
 
-    background-color: rgba(44, 41, 41, 0.917);
-    /* height: 100%; */
+    /* background-color: rgba(18, 17, 17, 0.8); */
+    background-color: transparent;
+    transition: background-color 0.7s;
+
+    clip-path: polygon(28% 0, 100% 0, 100% 100%, 25% 100%, 0 61%);
+    /* clip-path: polygon(28% 17%, 100% 17%, 100% 100%, 25% 100%, 0 57%); */
+    /* clip-path: polygon(52% 14%, 0% 28%, 14% 58%, 0% 69%, 12% 93%, 100% 100%, 100% 0%); */
+    /* clip-path: polygon(52% 14%, 0% 28%, 14% 58%, 0% 69%, 0 100%, 100% 100%, 100% 0%); */
 }
 
+.header-content .pageLoaded {
+    background-color: rgba(18, 17, 17, 0.9);
+
+}
+
+/* Media query to target the md breakpoint and smaller */
+@media (max-width: 768px) {
+    .header-content .content-column {
+        clip-path: none;
+    }
+
+    .header-content .content-content {
+        padding: 0;
+    }
+
+}
 
 
 /*  Navigation and Footer */
@@ -52,6 +100,18 @@ h1 {
 /* .navbar.hidden {
     display: none;
 } */
+
+.navbar.collapse-condition {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar.collapse-condition .nav-link {
+    color: black;
+}
+
+.collapse-condition .custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 0, 0, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
 
 .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.9);

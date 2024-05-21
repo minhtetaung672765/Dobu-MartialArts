@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping Design</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container-fluid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            height: 100vh;
+        }
+
+        .text-area {
+            background-color: white;
+            padding: 50px;
+            z-index: 1;
+        }
+
+        .image-area {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            background-image: url('img/profile.jpg');
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(21% 30%, 41% 63%, 14% 58%, 6% 49%, 0% 69%, 0% 99%, 98% 99%, 99% 20%);
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="text-area">
+            <h1>One network</h1>
+            <p>Any location. Thousands of gyms. Zero contracts.</p>
+            <form class="form-inline">
+                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter postcode or location">
+                <button type="submit" class="btn btn-primary mb-2">Find Gyms</button>
+            </form>
+            <p>Or browse all of our gyms in the UK</p>
+        </div>
+        <div class="image-area"></div>
+    </div>
+</body>
+
+</html>
