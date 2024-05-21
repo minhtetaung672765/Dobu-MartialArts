@@ -15,7 +15,7 @@ window.onbeforeunload = function () {
 document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('.navbar');
     var content_column = document.querySelector('.header-content .content-column');
-    var content_btn = document.querySelector('.header-content .header-content-btn');
+    var content_content = document.querySelector('.header-content .content-content');
 
     content_column.classList.add('pageLoaded');
 
@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (window.scrollY > 0) {
             navbar.classList.add('scrolled');
             content_column.classList.remove('pageLoaded');
-            content_btn.classList.add('scrolled');
+            content_content.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
             content_column.classList.add('pageLoaded');
-            content_btn.classList.remove('scrolled');
+            content_content.classList.remove('scrolled');
         }
 
         let previousScrollPoint = this.window.screenY;

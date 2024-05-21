@@ -36,10 +36,6 @@ h1 {
     background-color: red;
 }
 
-.header-content-btn.scrolled {
-    display: none;
-}
-
 .header-content .keyword {
     color: red;
 }
@@ -49,15 +45,20 @@ h1 {
     padding-right: 10px;
     box-sizing: border-box;
     text-align: center;
+
+    padding-top: 90%;
+}
+
+.content-content.scrolled {
+    display: none;
 }
 
 .header-content .content-column {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 
-    /* background-color: rgba(18, 17, 17, 0.8); */
-    background-color: transparent;
+    background: transparent;
     transition: background-color 0.7s;
 
     clip-path: polygon(28% 0, 100% 0, 100% 100%, 25% 100%, 0 61%);
@@ -66,15 +67,16 @@ h1 {
     /* clip-path: polygon(52% 14%, 0% 28%, 14% 58%, 0% 69%, 0 100%, 100% 100%, 100% 0%); */
 }
 
-.header-content .pageLoaded {
-    background-color: rgba(18, 17, 17, 0.9);
-
+.header-content .content-column.pageLoaded {
+    /* background-color: rgba(18, 17, 17, 0.8); */
+    background: linear-gradient(to top, rgba(18, 17, 17, 0.9), rgba(18, 17, 17, 0.5));
 }
 
 /* Media query to target the md breakpoint and smaller */
 @media (max-width: 768px) {
     .header-content .content-column {
         clip-path: none;
+        align-items: center;
     }
 
     .header-content .content-content {
