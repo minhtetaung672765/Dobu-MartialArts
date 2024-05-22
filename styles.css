@@ -184,6 +184,11 @@ h1 {
     object-position: center;
 }
 
+.content-sp-classes .class-description-area {
+    display: flex;
+    justify-content: center;
+}
+
 .sub-column-wrapper .btn.sp-class-register-btn {
     display: block;
     margin: 10px auto;
@@ -199,6 +204,62 @@ h1 {
     background-color: red;
 }
 
+/* Membership Benefits */
+
+.content-membership-benefits .hero-section {
+    background-image: url('img/judo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* height: 100vh; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    /* color: white; */
+    /* padding: 0 20px; */
+    /* box-sizing: border-box; */
+}
+
+.content-membership-benefits .content-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.content-membership-benefits .content-wrapper {
+    width: 100%;
+    /* height: 100%; */
+    /* margin-top: 150px; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content-membership-benefits .space-area {
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+
+    clip-path: polygon(0% 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
+}
+
+.content-membership-benefits .content-section {
+    /* padding: 0; */
+    width: 100%;
+    /* height: 100%; */
+
+    background-color: white;
+    text-align: center;
+    /* clip-path: polygon(0% 100%, 0% 0%, 50% 30%, 100% 0%, 100% 100%); */
+    /* clip-path: polygon(0% 100%, 0 50%, 50% 75%, 100% 50%, 100% 100%); */
+}
 
 /* ----------------------------------------------------- */
 /*  Navigation and Footer */
