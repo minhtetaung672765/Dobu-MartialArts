@@ -228,7 +228,7 @@ h1 {
     align-items: center;
     justify-content: center;
 
-    padding: 100px 20px;
+    padding: 150px 20px;
     box-sizing: border-box;
     color: white;
 }
@@ -295,12 +295,14 @@ h1 {
 /* Circular image styling */
 .content-membership-benefits .content-image img {
     width: auto;
-    height: 100%;
+    height: 30vh;
+    /* change 100% */
     max-width: 100%;
     /* border-radius: 50%; */
     clip-path: circle(30% at 50% 50%);
     object-fit: cover;
     object-position: center;
+    background-color: blue;
 }
 
 /* Content description styling */
@@ -345,9 +347,9 @@ h1 {
 }
 
 /* Use this css for manipulating navbar - hide when page is scrolled */
-/* .navbar.hidden {
+.navbar.hidden {
     display: none;
-} */
+}
 
 .navbar.collapse-condition {
     background-color: rgba(255, 255, 255, 0.9);
