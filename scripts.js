@@ -9,7 +9,6 @@ window.onbeforeunload = function () {
 //     content_column.classList.add('pageLoaded');
 // });
 
-
 // This event handles the backgroundcolor adjustment of navigation bar
 // tracks the user action - scroll page - add new class to html element
 document.addEventListener('DOMContentLoaded', function () {
@@ -46,8 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
         navbar.classList.toggle('collapse-condition');
     });
 });
-
-
 
 // This event handles monitoring the user's page scrolling behaviour 
 // tracks the user action - scroll page to down or not - add new class to html element
