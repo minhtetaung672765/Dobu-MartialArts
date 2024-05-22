@@ -174,7 +174,7 @@ h1 {
 
 /* Specialist classes area */
 .content-sp-classes .col-md {
-    height: 60vh;
+    height: 45vh;
 }
 
 .content-sp-classes .class-image-area img {
@@ -183,6 +183,22 @@ h1 {
     object-fit: cover;
     object-position: center;
 }
+
+.sub-column-wrapper .btn.sp-class-register-btn {
+    display: block;
+    margin: 10px auto;
+
+    color: black;
+    background-color: white;
+    border: 2px solid red;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.sub-column-wrapper .btn.sp-class-register-btn:hover {
+    color: white;
+    background-color: red;
+}
+
 
 /* ----------------------------------------------------- */
 /*  Navigation and Footer */
