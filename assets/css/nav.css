@@ -1,5 +1,5 @@
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 10;
     background-color: transparent;
@@ -9,9 +9,9 @@
 }
 
 /* Use this css for manipulating navbar - hide when page is scrolled */
-.navbar.hidden {
+/* .navbar.hidden {
     display: none;
-}
+} */
 
 .navbar.collapse-condition {
     background-color: rgba(255, 255, 255, 0.9);

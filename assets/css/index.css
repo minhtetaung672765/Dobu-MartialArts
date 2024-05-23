@@ -3,6 +3,11 @@
 @import url(nav.css);
 @import url(footer.css);
 
+/* Overwrite css for custom navbar */
+.navbar {
+    position: fixed;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
