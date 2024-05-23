@@ -7,7 +7,7 @@ body {
 }
 
 .header-section {
-    background-image: url('img/profile.jpg');
+    background-image: url('../img/profile.jpg');
     /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/profile.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,6 +153,7 @@ h1 {
     img {
         position: absolute;
         height: 75vh;
+        z-index: 3;
     }
 }
 
@@ -166,9 +167,14 @@ h1 {
 }
 
 @media (max-width: 768px) {
-
     .main-content .content-image-area {
         padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content .content-image-area {
+        padding: 0 5px 10px 5px;
     }
 }
 
@@ -207,7 +213,7 @@ h1 {
 /* Membership Benefits */
 
 .content-membership-benefits .hero-section {
-    background-image: url('img/judo.jpg');
+    background-image: url('../img/judo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -410,7 +416,7 @@ h1 {
 }
 
 .navbar.scrolled .navbar-brand img {
-    background-image: url('img/Logo.png');
+    background-image: url('../img/Logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 60px;
