@@ -1,0 +1,53 @@
+@import url(nav.css);
+@import url(footer.css);
+
+/* Overwrite css for custom navbar */
+.navbar .nav-link {
+    color: black;
+}
+
+/*  */
+.content-image-area .content-image {
+    height: 70vh;
+    width: 100%;
+}
+
+.main-content .row-to-order {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .content-image-area img {
+        clip-path: polygon(0% 0%, 89% 0, 100% 30%, 89% 48%, 84% 46%, 94% 100%, 0% 100%);
+
+    }
+}
+
+.main-content .content-image-area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    clip-path: polygon(100% 0%, 11% 0, 0 30%, 11% 48%, 16% 46%, 6% 100%, 100% 100%);
+}
+
+.main-content .content-description-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+
+    .main-content .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-content .content-image-area img {
+        clip-path: none;
+    }
+
+    .main-content .row-to-order .content-image-area img {
+        clip-path: none;
+    }
+}
