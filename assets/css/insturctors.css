@@ -1,0 +1,85 @@
+@import url(nav.css);
+@import url(footer.css);
+
+/* Overwrite css for custom navbar */
+.navbar {
+    position: default;
+}
+
+.navbar .nav-link {
+    color: black;
+}
+
+/* main content */
+.main-content .content-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.main-content .content-bg-layer {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 70%;
+
+    background-color: antiquewhite;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    clip-path: polygon(100% 0%, 10% 0, 0% 11%, 0 89%, 10% 100%, 100% 100%);
+}
+
+.main-content .content-image-area {
+    padding: 0;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Hide the overflow to keep the image within bounds */
+    z-index: 2;
+}
+
+.main-content .content-image-area img {
+    /* width: 100%; */
+    height: 100%;
+    clip-path: circle(33% at 50% 50%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-content .content-description-area {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: row;
+    z-index: 2;
+
+    background-color: antiquewhite;
+    /* box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px; */
+}
+
+.main-content .instructor-quote {
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+}
+
+@media (max-width: 768px) {
+
+    .main-content .content-description-area {
+        flex-direction: column;
+    }
+
+    .main-content .content-image-area {
+        height: 50vh;
+    }
+
+    .main-content .content-row {
+        justify-content: center;
+    }
+
+    .main-content .content-bg-layer {
+        width: 100%;
+        height: 70%;
+        clip-path: polygon(0% 100%, 0 30%, 50% 0, 50% 0, 100% 30%, 100% 100%);
+    }
+}
