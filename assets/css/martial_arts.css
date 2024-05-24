@@ -1,0 +1,19 @@
+@import url(nav.css);
+@import url(footer.css);
+
+.navbar .nav-link {
+    color: black;
+}
+
+.content-ma-normal .content-image-area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-ma-normal .content-description-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

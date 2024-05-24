@@ -1,0 +1,28 @@
+@import url(nav.css);
+@import url(footer.css);
+
+.navbar .nav-link {
+    color: black;
+}
+
+table {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    background-color: orangered;
+    color: white;
+}
+
+tr td:first-child {
+    font-weight: bold;
+    background-color: #f8f8f8;
+}
+
+th,
+td {
+    overflow: auto;
+    font-size: clamp(10px, 2vw, 16px);
+}
