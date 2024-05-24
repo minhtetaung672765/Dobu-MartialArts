@@ -1,0 +1,39 @@
+@import url(nav.css);
+@import url(footer.css);
+
+/* Overwrite css for custom navbar */
+.navbar .nav-link {
+    color: black;
+}
+
+.header-content {
+    height: 100vh;
+}
+
+.header-content .header-row {
+    background-image: url(../img/judo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55vh;
+}
+
+.header-content .header-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content .content-heading {
+    display: flex;
+    justify-content: center;
+    width: 25vw;
+    height: 60%;
+    background-color: bisque;
+}
+
+.main-content .content-image-area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
