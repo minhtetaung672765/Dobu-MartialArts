@@ -7,6 +7,11 @@
 }
 
 /*  */
+
+body {
+    background-color: azure;
+}
+
 .content-image-area .content-image {
     height: 70vh;
     width: 100%;
@@ -37,6 +42,26 @@
 }
 
 @media (max-width: 576px) {
+
+    .main-content .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content-image-area .content-image {
+        height: 50vh;
+    }
+
+    .main-content .content-image-area img {
+        clip-path: none;
+    }
+
+    .main-content .row-to-order .content-image-area img {
+        clip-path: none;
+    }
+}
+
+@media (max-width: 768px) {
 
     .main-content .row {
         display: flex;
