@@ -4,7 +4,6 @@
 /* Overwrite css for custom navbar */
 .navbar {
     position: fixed;
-    background-color: none;
 }
 
 /*  */
@@ -104,6 +103,20 @@ body {
     align-items: center;
 }
 
+/* animations */
+/* Hide the content initially */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+/* When the element is in the viewport, apply this class */
+.in-view {
+    opacity: 1;
+}
+
+
+/* media queries */
 @media (max-width: 576px) {
 
     .main-content .row {
