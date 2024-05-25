@@ -15,25 +15,172 @@ body {
     color: black;
 }
 
-/* .header-section {
+/*  */
+
+h1 {
+    margin-top: 10vh;
+}
+
+h6 {
+    margin-bottom: 8vh;
+}
+
+h1,
+h6 {
+    text-align: center;
+}
+
+.check-icon {
+    color: green;
+}
+
+.main-content .content-column {
+    padding: 5px;
+}
+
+.main-content .card {
+    border-radius: 8%;
+    /* border-top-left-radius: 5%;
+    border-top-right-radius: 5%; */
+    overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/profile_2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 150vh;
-} */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 
-.content-benefits .content-image-area img {
-    height: 100%;
+.main-content .card .content-image-area {
     width: 100%;
+    height: 40vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main-content .card .content-image-area img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.content-benefits .content-description-area {
+.card .membership-type {
+    width: 100%;
+    padding: 5% 0 5% 0;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    background-color: rgba(213, 11, 21, 0.5);
+}
+
+.card .content-description-area {
+    padding: 8% 0;
+}
+
+.card .register-area {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 5%;
 }
+
+.card .register-area .register-btn {
+    width: 60%;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    transition: color 0.2s, background-color 0.3s;
+}
+
+.card .register-area .register-btn:hover {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+
+/*  */
+
+.additional-content {
+    background-color: rgb(230, 229, 229);
+}
+
+.additional-content .row {
+    padding-top: 20vh;
+    /* color: white; */
+}
+
+.additional-content .sub-add-content-row {
+    color: black;
+    padding-bottom: 20vh;
+}
+
+.additional-content .add-content-row .heading-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.additional-content .add-content-row .heading-col .heading-text,
+.sub-heading-text {
+    width: 90%;
+}
+
+.additional-content .sub-add-content-row .content-column {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100vh;
+}
+
+.sub-add-content-row .content-column .content-image {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.sub-add-content-row .content-column .content-image img {
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sub-add-content-row .content-column .content-description {
+    position: absolute;
+    z-index: 2;
+    background-color: bisque;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* animations */
+/* Make the content appear when the page is scrolled to its area */
+/* Hide the content initially */
+.animate-on-scroll {
+    opacity: 0;
+    /* transform: translateY(50px); 
+    transition: opacity 1s ease-out, transform 1s ease-out; */
+    transition: opacity 1s ease-out;
+    transition-delay: 0.3s;
+}
+
+.animate-delayed {
+    transition: opacity 1s ease-out;
+    transition-delay: 0.6s;
+}
+
+/* When the element is in the viewport, apply this class */
+.in-view {
+    opacity: 1;
+    /* transform: translateY(0); */
+}
+
+/* ---- end of animations ---- */
