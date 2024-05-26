@@ -5,6 +5,39 @@
     color: black;
 }
 
+/* start of body contents */
+.additional-content {
+    color: white;
+    background-color: rgb(1, 1, 52);
+    padding-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.additional-content .row {
+    padding: 20vh 0;
+    /* color: white; */
+}
+
+.additional-content .heading-col,
+.additional-content .sub-heading-col {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.additional-content .sub-heading-col {
+    justify-content: start;
+}
+
+.additional-content .heading-text {
+    width: 50%;
+}
+
+.additional-content .sub-heading-text {
+    width: 85%;
+}
+
+
 table {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -26,3 +59,27 @@ td {
     overflow: auto;
     font-size: clamp(10px, 2vw, 16px);
 }
+
+/* animations */
+/* Make the content appear when the page is scrolled to its area */
+/* Hide the content initially */
+.animate-on-scroll {
+    opacity: 0;
+    /* transform: translateY(50px); 
+    transition: opacity 1s ease-out, transform 1s ease-out; */
+    transition: opacity 1s ease-out;
+    transition-delay: 0.3s;
+}
+
+.animate-delayed {
+    transition: opacity 1s ease-out;
+    transition-delay: 0.6s;
+}
+
+/* When the element is in the viewport, apply this class */
+.in-view {
+    opacity: 1;
+    /* transform: translateY(0); */
+}
+
+/* ---- end of animations ---- */
