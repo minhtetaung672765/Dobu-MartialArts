@@ -6,15 +6,17 @@
 }
 
 /* start of body contents */
+body {
+    background-color: rgb(230, 229, 229);
+}
+
 .additional-content {
-    color: white;
-    background-color: rgb(1, 1, 52);
-    padding-top: 15vh;
-    margin-bottom: 15vh;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .additional-content .row {
-    padding: 20vh 0;
+    padding: 10vh 0;
     /* color: white; */
 }
 
@@ -30,7 +32,7 @@
 }
 
 .additional-content .heading-text {
-    width: 50%;
+    width: 60%;
 }
 
 .additional-content .sub-heading-text {
@@ -51,7 +53,11 @@ th {
 
 tr td:first-child {
     font-weight: bold;
-    background-color: #f8f8f8;
+    background-color: #edeaea;
+}
+
+tr td {
+    background-color: #e2dcdc;
 }
 
 th,
