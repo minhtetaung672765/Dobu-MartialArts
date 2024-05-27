@@ -13,17 +13,17 @@
     display: none;
 } */
 
-.navbar.collapse-condition {
+.navbar.collapse-condition.collapse-toggler-focused {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.navbar.collapse-condition .nav-link {
+.navbar.collapse-condition.collapse-toggler-focused .nav-link {
     color: black;
 }
 
-.collapse-condition .custom-toggler .navbar-toggler-icon {
+/* .collapse-toggler-focused .custom-toggler .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 0, 0, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
-}
+} */
 
 .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.9);
@@ -31,9 +31,9 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 
     /* Custom styles for the toggler (hamburger) */
-    .custom-toggler .navbar-toggler-icon {
+    /* .custom-toggler .navbar-toggler-icon {
         background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 0, 0, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
-    }
+    } */
 }
 
 .navbar.scrolled .navbar-brand img {
@@ -47,6 +47,7 @@
     color: black;
 }
 
+.navbar.collapse-condition .nav-link:hover,
 .navbar.scrolled .nav-link:hover,
 .navbar .nav-link:hover {
     color: red;
@@ -126,6 +127,6 @@
 }
 
 /* Custom styles for the toggler (hamburger) */
-.custom-toggler .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
-}
+/* .custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgb(7, 7, 8)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+} */
