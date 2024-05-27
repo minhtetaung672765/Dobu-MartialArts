@@ -1,35 +1,85 @@
 @import url(nav.css);
 @import url(footer.css);
 
-
-.singup-box {
-    margin: 20vh 0;
+.navbar .nav-link {
+    display: none;
 }
 
-.singup-box .content-image-area {
+.navbar.scrolled {
+    /* display: none; */
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 0;
+}
+
+/* body contents */
+
+body {
+    background-color: rgb(212, 213, 213);
+}
+
+.signup-box {
+    /* margin-top: 10vh; */
+    margin-bottom: 30vh;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(240, 242, 242);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-box h2 {
+    padding: 5vh 0;
+}
+
+.signup-box .register-area {
+    width: 100%;
+    padding: 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-box .submit-btn {
+    width: 60%;
+}
+
+.signup-box .content-image-area {
     min-height: 70vh;
+    padding: 0;
 }
 
-.singup-box .content-image {
+.signup-box .content-image {
     width: 100%;
     height: 100%;
     background-image: url('../img/profile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    clip-path: polygon(100% 0%, 0% 0%, 0 20%, 13% 5%, 17% 5%, 0 25%, 0% 100%, 100% 100%, 100% 80%, 87% 95%, 83% 95%, 100% 75%);
 }
 
 .form-group label {
     font-weight: bold;
 }
 
+.form-group input {
+    background-color: transparent;
+}
+
+.form-group input:focus {
+    border: 1px solid navy;
+    box-shadow: none;
+}
+
 .btn-primary {
-    background-color: #333;
-    border-color: #333;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #555;
-    border-color: #555;
+    background-color: rgb(165, 2, 2);
 }
 
 /* Toggle password visibility button */
@@ -42,11 +92,4 @@
 
 .toggle-password .fa {
     font-size: 1.2em;
-}
-
-/* Image styling */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
 }
