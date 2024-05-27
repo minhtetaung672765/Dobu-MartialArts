@@ -1,12 +1,17 @@
 @import url(nav.css);
 @import url(footer.css);
 
-/* Overwrite css for custom navbar */
-.navbar {
-    position: fixed;
+/* custom navbar for this page */
+.custom-toggler .navbar-toggler-icon {
+    /* white */
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
 }
 
-/*  */
+.navbar.scrolled .custom-toggler .navbar-toggler-icon,
+.collapse-toggler-focused .custom-toggler .navbar-toggler-icon {
+    /* black (default) */
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgb(7,7,8)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
 
 body {
     background-color: azure;

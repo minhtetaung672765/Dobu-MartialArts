@@ -6,21 +6,29 @@
     color: black;
 }
 
-h1,
-h2 {
-    margin: 20px 0 60px 0;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
+body {
     background-color: #f8f8f8;
-    padding: 10px 0;
 }
 
-h2 {
-    margin: 0 0 50px 0;
+.contact-section {
+    background-color: #ebebeb;
+    padding-bottom: 20vh;
+
 }
 
-.heading-row {
-    padding-bottom: 50px;
+.section-title {
+    font-family: 'Roboto Slab', serif;
+    padding: 10vh 0;
+}
+
+.about-image-area {
+    padding: 0;
+}
+
+.about-image-area img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
 }
 
 .titles {
@@ -56,4 +64,54 @@ input[type="submit"] {
 input[type="submit"]:hover {
     color: white;
     background-color: red;
+}
+
+/*  */
+
+
+.additional-content {
+    background-color: rgb(230, 229, 229);
+}
+
+.additional-content .row {
+    padding-top: 20vh;
+    /* color: white; */
+}
+
+.additional-content .sub-add-content-row {
+    color: black;
+    padding-bottom: 20vh;
+}
+
+.additional-content .sub-add-content-row .content-column {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100vh;
+}
+
+.sub-add-content-row .content-column .content-image {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.sub-add-content-row .content-column .content-image img {
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sub-add-content-row .content-column .content-description {
+    position: absolute;
+    z-index: 2;
+    background-color: bisque;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
 }

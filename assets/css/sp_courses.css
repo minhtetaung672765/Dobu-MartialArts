@@ -2,10 +2,19 @@
 @import url(footer.css);
 
 /* Overwrite css for custom navbar */
-.navbar .nav-link {
-    color: black;
+.navbar {
+    position: relative;
+
+    .nav-link {
+        color: black
+    }
 }
 
+.navbar.hidden {
+    display: block;
+}
+
+/* body contents */
 .header-content {
     /* min-height: 100vh; */
     background-color: black;
