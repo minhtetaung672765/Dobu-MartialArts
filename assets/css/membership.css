@@ -1,7 +1,6 @@
 @import url(nav.css);
 @import url(footer.css);
 
-
 /* Overwrite css for custom navbar */
 /* .navbar {
     position: default;
@@ -15,6 +14,7 @@
 
 body {
     background-color: rgb(246, 243, 240);
+    position: relative;
 }
 
 h1 {

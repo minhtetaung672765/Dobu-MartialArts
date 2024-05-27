@@ -1,12 +1,11 @@
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
     background-color: transparent;
     /* Initially transparent */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition */
 }
 
 /* Use this css for manipulating navbar - hide when page is scrolled */
@@ -94,15 +93,11 @@
     border: none;
     border-radius: 5px;
     padding: 0;
+    overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
-.dropdown-menu:hover {
-    overflow: hidden;
-}
-
 .dropdown-menu .dropdown-item {
-    /* border-radius: 5px; */
     padding: 15px 0 15px 20px;
 }
 
@@ -127,7 +122,7 @@
 }
 
 .nav-link.btn:hover {
-    background-color: rgb(188, 10, 10);
+    background-color: rgb(157, 1, 1);
 }
 
 /* Custom styles for the toggler (hamburger) */

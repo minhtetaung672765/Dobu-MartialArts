@@ -11,6 +11,7 @@
 /* body contents */
 body {
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 
 .header-section {
