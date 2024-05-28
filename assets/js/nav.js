@@ -1,5 +1,7 @@
 // This event handles the backgroundcolor adjustment of navigation bar
 // tracks the user action - scroll page - add new class to html element
+// when the navbar is holding "scrolled" class, it will change its styles 
+// - (for exampele, from transparent bg to coloured bg)
 document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('.navbar');
 
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // This event checks if the collapse-toggler is being clicked or not
+// mainly used to change the bg color of navbar and style its links when the toggler button is clicked
 document.addEventListener('DOMContentLoaded', function () {
     var toggler = document.querySelector('.navbar .navbar-toggler');
     var navbar = document.querySelector('.navbar');
@@ -27,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // This event checks if the navbar is in collapse condition or not (collapse-toggler shows up)
+// mainly used to style navbar when the navbar is collapsed 
 $(document).ready(function () {
     function checkNavbarCollapse() {
         if ($(window).width() < 992) {
@@ -46,9 +50,9 @@ $(document).ready(function () {
     });
 });
 
-
 // This event handles monitoring the user's page scrolling behaviour 
 // tracks the user action - scroll page to down or not - add new class to html element
+// mainly used to hide the navbar when user scroll down and display when scroll up
 document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('.navbar');
     var lastScrollTop = 0;

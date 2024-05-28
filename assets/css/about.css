@@ -10,8 +10,13 @@ body {
     background-color: #f8f8f8;
 }
 
+.about-section {
+    padding-bottom: 10vh;
+
+}
+
 .contact-section {
-    background-color: #ebebeb;
+    /* background-color: #d7d6d6; */
     padding-bottom: 20vh;
 
 }
@@ -27,6 +32,7 @@ body {
 
 .about-image-area img {
     height: 100vh;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -36,6 +42,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    padding-top: 5vh;
 }
 
 .keywords {
@@ -57,7 +64,8 @@ input[type="submit"] {
     color: red;
     font-weight: bold;
     background-color: transparent;
-    border: 2px solid red;
+    border: 1px solid red;
+    border-radius: 20px;
     transition: background-color 0.3s;
 }
 
@@ -68,19 +76,13 @@ input[type="submit"]:hover {
 
 /*  */
 
-
 .additional-content {
     background-color: rgb(230, 229, 229);
 }
 
-.additional-content .row {
-    padding-top: 20vh;
-    /* color: white; */
-}
-
 .additional-content .sub-add-content-row {
     color: black;
-    padding-bottom: 20vh;
+    padding: 15vh 0;
 }
 
 .additional-content .sub-add-content-row .content-column {
@@ -115,3 +117,55 @@ input[type="submit"]:hover {
     padding: 40px;
     box-sizing: border-box;
 }
+
+.sub-add-content-row .content-column .content-description .content-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .sub-add-content-row .content-column .content-description {
+        width: 65%;
+    }
+}
+
+@media (max-width: 567px) {
+    .sub-add-content-row .content-column .content-image img {
+        width: 85%;
+    }
+
+    .sub-add-content-row .content-column .content-description {
+        width: 80%;
+    }
+}
+
+@media (max-width: 440px) {
+    .sub-add-content-row .content-column .content-description {
+        overflow: scroll;
+    }
+}
+
+/* animations */
+/* Make the content appear when the page is scrolled to its area */
+/* Hide the content initially */
+.animate-on-scroll {
+    opacity: 0;
+    /* transform: translateY(50px); 
+    transition: opacity 1s ease-out, transform 1s ease-out; */
+    transition: opacity 1s ease-out;
+    transition-delay: 0.3s;
+}
+
+.animate-delayed {
+    transition: opacity 1s ease-out;
+    transition-delay: 0.6s;
+}
+
+/* When the element is in the viewport, apply this class */
+.in-view {
+    opacity: 1;
+    /* transform: translateY(0); */
+}
+
+/* ---- end of animations ---- */

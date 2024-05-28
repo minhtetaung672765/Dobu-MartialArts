@@ -168,3 +168,25 @@ body {
         clip-path: none;
     }
 }
+
+@media (max-width: 768px) {
+    .sub-heading-row .content-column .content-description {
+        width: 65%;
+    }
+}
+
+@media (max-width: 567px) {
+    .sub-heading-row .content-column .content-image img {
+        width: 85%;
+    }
+
+    .sub-heading-row .content-column .content-description {
+        width: 80%;
+    }
+}
+
+@media (max-width: 440px) {
+    .sub-heading-row .content-column .content-description {
+        overflow: scroll;
+    }
+}

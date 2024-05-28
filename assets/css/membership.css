@@ -157,6 +157,22 @@ h6 {
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    .sub-add-content-row .content-column .content-description {
+        width: 65%;
+    }
+}
+
+@media (max-width: 567px) {
+    .sub-add-content-row .content-column .content-image img {
+        width: 85%;
+    }
+
+    .sub-add-content-row .content-column .content-description {
+        width: 80%;
+    }
+}
+
 /* animations */
 /* Make the content appear when the page is scrolled to its area */
 /* Hide the content initially */
