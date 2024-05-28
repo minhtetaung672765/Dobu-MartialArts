@@ -1,8 +1,8 @@
 
 // Make the page return to top when it's refreshed
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-};
+// window.onbeforeunload = function () {
+//     window.scrollTo(0, 0);
+// };
 
 // This event handles the behaviour of header content
 // by manipulating class into the html, which create alternate styles by css

@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@500&family=Oswald:wght@200..700&family=Patrick+Hand&family=Roboto+Condensed:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@500&family=Oswald:wght@200..700&family=Patrick+Hand&family=Roboto+Condensed:wght@700&display=swap');
 
 @import url(nav.css);
 @import url(footer.css);
@@ -19,6 +19,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
+}
+
+.keyword {
+    font-family: 'Oswald', sans-serif;
 }
 
 .header-section {
@@ -150,6 +154,7 @@ h1 {
     object-position: center;
     /* position: absolute; */
     z-index: 1;
+    /* border: 1px solid navy; */
 
     transition: height 0.3s;
 }
@@ -207,6 +212,8 @@ h1 {
     .overlap {
         background-color: rgba(11, 11, 11, 0.8);
         opacity: 1;
+        height: 70vh;
+        /* height must follow img height */
     }
 
     img {
@@ -247,7 +254,7 @@ h1 {
 
 /* Specialist classes area */
 .content-sp-classes .class-image-area {
-    min-height: 50vh;
+    height: 50vh;
 }
 
 .content-sp-classes .class-image-area img {
@@ -390,7 +397,7 @@ h1 {
     clip-path: circle(30% at 50% 50%);
     object-fit: cover;
     object-position: center;
-    background-color: blue;
+    /* background-color: rgb(228, 226, 226); */
 }
 
 /* Content description styling */
@@ -399,8 +406,13 @@ h1 {
     height: 40%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     padding: 0 20px;
+}
+
+.content-membership-benefits .content-description .benefits {
+    font-size: 14px;
 }
 
 .content-section .card {
@@ -421,6 +433,10 @@ h1 {
         /* Top shadow */
         0 8px 8px -8px rgba(99, 99, 99, 0.5);
     /* Bottom shadow */
+}
+
+.content-section .card:hover .content-image img {
+    background-color: rgb(228, 226, 226);
 }
 
 .content-membership-benefits .to-membership-btn {
@@ -473,6 +489,10 @@ h1 {
 .content-facilites .content-description-area .facility-type {
     text-align: center;
     padding: 10px 0;
+}
+
+.check-icon {
+    color: green;
 }
 
 /* animations */
