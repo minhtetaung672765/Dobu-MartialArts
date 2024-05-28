@@ -223,7 +223,9 @@ h6 {
 
 .additional-content .add-content-row .heading-col .heading-text,
 .sub-heading-text {
-    width: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
 
 .additional-content .sub-add-content-row .content-column {
@@ -255,7 +257,9 @@ h6 {
     height: 80%;
     display: flex;
     align-items: center;
-    padding: 40px;
+    justify-content: left;
+    flex-direction: column;
+    padding: 40px 0;
     box-sizing: border-box;
 }
 
