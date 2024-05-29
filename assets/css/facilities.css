@@ -108,6 +108,10 @@ body {
     align-items: center;
 }
 
+.main-content .content-description-area .content-description {
+    width: 90%;
+}
+
 /* animations */
 /* Make the content appear when the page is scrolled to its area */
 /* Hide the content initially */
