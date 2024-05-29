@@ -112,9 +112,10 @@ body {
 }
 
 .main-content .instructor-quote {
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
     font-size: 20px;
+    font-style: italic;
 }
 
 .check-icon {
@@ -125,6 +126,7 @@ body {
 
     .main-content .content-description-area {
         flex-direction: column;
+        padding-bottom: 40px;
     }
 
     .main-content .content-image-area {
@@ -133,12 +135,19 @@ body {
 
     .main-content .content-row {
         justify-content: center;
+        align-items: end;
     }
 
     .main-content .content-bg-layer {
         width: 100%;
-        height: 70%;
+        height: 90%;
         clip-path: polygon(0% 100%, 0 30%, 50% 0, 50% 0, 100% 30%, 100% 100%);
+    }
+}
+
+@media (max-width: 567px) {
+    .main-content .content-bg-layer {
+        clip-path: none;
     }
 }
 
