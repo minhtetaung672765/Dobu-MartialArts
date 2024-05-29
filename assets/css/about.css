@@ -8,6 +8,7 @@
 
 body {
     background-color: #f8f8f8;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .about-section {
@@ -22,7 +23,7 @@ body {
 }
 
 .section-title {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', sans-serif;
     padding: 10vh 0;
 }
 
@@ -38,11 +39,11 @@ body {
 }
 
 .titles {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 15vh;
 }
 
 .keywords {
@@ -122,6 +123,10 @@ input[type="submit"]:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.check-icon {
+    color: green;
 }
 
 @media (max-width: 768px) {
