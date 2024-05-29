@@ -21,7 +21,7 @@
 }
 
 .header-content .header-row {
-    background-image: url(../img/judo.jpg);
+    background-image: url(../img/self-defense-start.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 55vh;
@@ -81,6 +81,10 @@
     border-radius: 5%;
     overflow: hidden;
     background-color: rgb(235, 233, 233);
+}
+
+.main-content .content-image-area {
+    height: 50vh;
 }
 
 .main-content .content-image-area img {

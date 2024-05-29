@@ -69,7 +69,7 @@ body {
 .sub-heading-row .content-column .content-description {
     position: absolute;
     z-index: 2;
-    background-color: bisque;
+    background-color: yellowgreen;
     width: 50%;
     height: 60%;
     display: flex;
