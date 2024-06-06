@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@500&family=Oswald:wght@200..700&family=Patrick+Hand&family=Roboto+Condensed:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@500&family=Oswald:wght@200..700&family=Patrick+Hand&family=Roboto+Condensed:wght@700&display=swap'); */
 
 @import url(nav.css);
 @import url(footer.css);
@@ -18,11 +18,22 @@
 /* body contents */
 body {
     font-family: 'Open Sans', sans-serif;
-    position: relative;
+}
+
+p {
+    font-size: 18px;
+}
+
+.navbar .nav-link {
+    font-family: 'Roboto', sans-serif;
 }
 
 .keyword {
     font-family: 'Oswald', sans-serif;
+}
+
+.accent-font {
+    font-family: 'Roboto', sans-serif;
 }
 
 .header-section {
