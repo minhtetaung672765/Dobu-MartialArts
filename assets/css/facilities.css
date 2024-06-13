@@ -17,6 +17,10 @@ body {
     background-color: azure;
 }
 
+p {
+    font-size: 18px;
+}
+
 .header-content {
     background-color: black;
 }

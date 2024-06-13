@@ -11,6 +11,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+p {
+    font-size: 18px;
+}
+
 .about-section {
     padding-bottom: 10vh;
 

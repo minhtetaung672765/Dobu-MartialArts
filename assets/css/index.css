@@ -119,6 +119,12 @@ h1 {
 /* ----------------------------------------------------- */
 /*  Main Body content */
 
+.ma-link,
+.ma-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
 /* Martial Arts area */
 .ma-additional-content {
     padding-top: 10vh;
